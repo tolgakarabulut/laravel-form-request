@@ -13,7 +13,7 @@ use Illuminate\Http\Request;
 |
 */
 
-Route::group(['prefix' => 'book'], function () {
+Route::group(['prefix' => 'book'], static function () {
     Route::post('create', 'BookController@create');
     Route::get('list', 'BookController@list');
     Route::delete('delete', 'BookController@delete');
